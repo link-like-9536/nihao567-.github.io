@@ -1,5 +1,5 @@
 /* ===================================================
-                  preloader
+                  preloader 预紧器
 =======================================================*/
 
 if( device.tablet() && device.mobile() ) {
@@ -49,7 +49,7 @@ if( device.tablet() && device.mobile() ) {
 $(document).ready(function() {
 
 /* ===================================================
-          RSVP form
+          RSVP form   RSVP表格
 =======================================================*/
 
     $(".border .row > div").click(function(){
