@@ -10,7 +10,7 @@ if( device.tablet() && device.mobile() ) {
               showbar: true,                 
               barColor: "#fff",
               textColor: "#000;",
-              backgroundColor: "#ff9192",
+              backgroundColor: "#ff9192",//backgroundColor: "#ff9192"
               barHeight: '10',
               percentage: true,                       
               completeAnimation: "fade",
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 
 /* ===================================================
-                  "collapse mobile menu after click"
+                  "collapse mobile menu after click" “点击后折叠移动菜单”
 =======================================================*/
 if( device.tablet() && device.mobile() ) {
     $('.navbar-collapse a').click(function (e) {

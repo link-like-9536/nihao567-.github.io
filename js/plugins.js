@@ -1,4 +1,4 @@
-// Avoid `console` errors in browsers that lack a console.
+// Avoid `console` errors in browsers that lack a console. 避免在缺少控制台的浏览器中出现“控制台”错误。
 (function() {
     var method;
     var noop = function () {};
@@ -21,4 +21,4 @@
     }
 }());
 
-// Place any jQuery/helper plugins in here.
+// Place any jQuery/helper plugins in here. 在这里放置任何 jQueryhelper 插件。
