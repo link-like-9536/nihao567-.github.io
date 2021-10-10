@@ -2,18 +2,18 @@
                   preloader 预紧器
 =======================================================*/
 
-if( device.tablet() && device.mobile() ) {
+if( device.tablet() && device.mobile() ) {//检查设备类型 device.tablet()平板设备  device.mobile()移动设备
             
-    window.addEventListener("DOMContentLoaded", function() {
-        $("body").queryLoader2({
-              minimumTime: 500,
-              showbar: true,                 
-              barColor: "#fff",
-              textColor: "#000;",
-              backgroundColor: "#ff9192",//backgroundColor: "#ff9192"
-              barHeight: '10',
-              percentage: true,                       
-              completeAnimation: "fade",
+    window.addEventListener("DOMContentLoaded", function() {//addEventListener监听 DOMContentLoaded事件  指向function()指定要事件触发时执行的函数 函数在下一行
+        $("body").queryLoader2({//选着全部body元素通过 queryLoader2（jQuery的预加载插件）进行加载
+              minimumTime: 500,//最短时间
+              showbar: true,//显示栏
+              barColor: "#fff",//条形颜色
+              textColor: "#000;",//文字颜色
+              backgroundColor: "#ff9192",//backgroundColor: "#ff9192"//背景颜色
+              barHeight: '10',//条形高度
+              percentage: true,//百分比
+              completeAnimation: "fade",//完整动画
               onComplete: function() {
                   $(".bghide").fadeOut("fast", "easeInSine", function(){
                     $(this).remove();
@@ -26,14 +26,14 @@ if( device.tablet() && device.mobile() ) {
 } else {
     $(document).ready(function() {
         $("body").queryLoader2({
-            minimumTime: 500,
-            showbar: true,                 
-            barColor: "#fff",
-            textColor: "#000;",
-            backgroundColor: "#ff9192",
-            barHeight: '10',
-            percentage: true,                       
-            completeAnimation: "fade",
+            minimumTime: 500,//最短时间
+            showbar: true,//显示栏
+            barColor: "#fff",//条形颜色
+            textColor: "#000;",//文字颜色
+            backgroundColor: "#ff9192",//背景颜色
+            barHeight: '10',//条形高度
+            percentage: true,//百分比
+            completeAnimation: "grow",//完整动画
             onComplete: function() {
                 $(".bghide").fadeOut("fast", "easeInSine", function(){
                     $(this).remove();
