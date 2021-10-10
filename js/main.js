@@ -46,7 +46,7 @@ if( device.tablet() && device.mobile() ) {//检查设备类型 device.tablet()�
 };
 
 
-$(document).ready(function() {
+$(document).ready(function() {//等待DOM结构全部加载
 
 /* ===================================================
           RSVP form   RSVP表格
