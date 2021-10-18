@@ -52,10 +52,10 @@ $(document).ready(function() {//等待DOM结构全部加载
           RSVP form   RSVP表格
 =======================================================*/
 
-    $(".border .row > div").click(function(){
+    $(".border .row > div").click(function(){//border、row下的div如发生点击
                     
-        var eventValue = $(this).find("h5").text();
-        var theID = $(this).find("h5").attr('class');
+        var eventValue = $(this).find("h5").text();//获取 this下的<h5>的所有text find遍历
+        var theID = $(this).find("h5").attr('class');//this下的<h5>的所有class属性值
         
         var eventParticipating = "<div class='eventTag'><label class='checkbox-inline' for='"+theID+"'><input type='checkbox' checked='checked' id='"+theID+"' name='event[]' value='"+eventValue+"'>"+eventValue+"</label><span class='remove'>x</span></div>";  
 
